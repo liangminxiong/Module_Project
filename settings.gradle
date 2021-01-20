@@ -1,0 +1,6 @@
+include ':User'
+include ':Project'
+include ':Home'
+include ':Common'
+include ':app'
+rootProject.name = "Module_Project"
