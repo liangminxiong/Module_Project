@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_colorPrimary"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:padding="@dimen/dp_20"
+        android:text="Hello World!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvChangeAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_button_bg"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:padding="@dimen/dp_20"
+        android:text="CHANGE_ADAPTER"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContent"
+        tools:ignore="HardcodedText" />
+
+    <com.lmx.common.widget.NineGridView
+        android:id="@+id/nineGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChangeAdapter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

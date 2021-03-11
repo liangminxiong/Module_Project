@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    //viewModel and LiveData
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    api 'androidx.annotation:annotation:1.1.0'
+
+    //network
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    api 'org.greenrobot:eventbus:3.2.0'
+
+    api 'com.google.code.gson:gson:2.8.6'
+    //图片
+    api 'io.coil-kt:coil:0.9.5'
+    api 'io.coil-kt:coil-gif:0.9.5'
+    api 'io.coil-kt:coil-svg:0.9.5'
+    //数据库
+    api 'org.litepal.android:java:3.0.0'
+    //上、下拉刷新
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //无特殊header可以不用
+    //api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    //轮播图
+    api 'com.youth.banner:banner:2.0.12'
+    //webView
+    api 'com.just.agentweb:agentweb:4.0.2'
+    //阿里 路由
+    api 'com.alibaba:arouter-api:1.5.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    // 权限请求框架：https://github.com/getActivity/XXPermissions
+    api 'com.hjq:xxpermissions:9.8'
+}

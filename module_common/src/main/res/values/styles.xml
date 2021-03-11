@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="common_AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/common_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/common_colorPrimaryDark</item>
+        <item name="colorAccent">@color/common_colorAccent</item>
+        <item name="android:textColor">@color/common_baseTextColor</item>
+    </style>
+
+    <style name="BottomDialogAnimation" tools:ignore="ResourceName">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_slide_show</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_slide_hide</item>
+    </style>
+
+    <style name="BottomDialog" parent="Theme.AppCompat.Light.Dialog" tools:ignore="ResourceName">
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog" tools:ignore="ResourceName">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar" tools:ignore="ResourceName">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="common_app_name" tools:ignore="ResourceName">CommonInfo</string>
+
+    <string name="common_loading" tools:ignore="ResourceName">加载中…</string>
+    <string name="common_load_failed" tools:ignore="ResourceName">加载失败</string>
+
+    <string name="common_home" tools:ignore="ResourceName">首页</string>
+    <string name="common_system" tools:ignore="ResourceName">体系</string>
+    <string name="common_project" tools:ignore="ResourceName">项目</string>
+    <string name="common_wx" tools:ignore="ResourceName">公众号</string>
+
+    <string name="common_complete_info" tools:ignore="ResourceName">请完善信息</string>
+    <string name="common_register" tools:ignore="ResourceName">注册</string>
+    <string name="common_password_not_match" tools:ignore="ResourceName">密码输入不一致</string>
+    <string name="common_register_success" tools:ignore="ResourceName">注册成功</string>
+    <string name="common_login" tools:ignore="ResourceName">登录</string>
+    <string name="common_logout" tools:ignore="ResourceName">退出登录</string>
+    <string name="common_input_username" tools:ignore="ResourceName">请输入用户名</string>
+    <string name="common_input_password" tools:ignore="ResourceName">请输入密码</string>
+    <string name="common_input_repassword" tools:ignore="ResourceName">请确认密码</string>
+
+    <string name="common_author" tools:ignore="ResourceName">作者:</string>
+    <string name="common_category" tools:ignore="ResourceName">分类:</string>
+
+    <string name="common_collect_list" tools:ignore="ResourceName">收藏列表</string>
+    <string name="common_collect_failed" tools:ignore="ResourceName">收藏失败</string>
+    <string name="common_uncollect_failed" tools:ignore="ResourceName">取消收藏失败</string>
+    <string name="common_hot_key" tools:ignore="ResourceName">热搜</string>
+    <string name="common_input_key" tools:ignore="ResourceName">请输入搜索关键词</string>
+
+    <string name="common_settings" tools:ignore="ResourceName">设置</string>
+    <string name="common_night_mode" tools:ignore="ResourceName">夜间模式</string>
+    <string name="common_feedback" tools:ignore="ResourceName">反馈</string>
+
+</resources>

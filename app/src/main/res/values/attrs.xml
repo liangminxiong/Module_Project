@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- REditText -->
+    <declare-styleable name="REditText" tools:ignore="ResourceName">
+        <attr name="object_foreground_color" format="color" />
+        <attr name="object_background_color" format="color" />
+    </declare-styleable>
+</resources>

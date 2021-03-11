@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="tv_title" type="id" tools:ignore="ResourceName"/>
+    <item name="ctv_animation" type="id" tools:ignore="ResourceName" />
+</resources>

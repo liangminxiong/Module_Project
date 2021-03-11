@@ -1,6 +1,6 @@
-include ':User'
-include ':Project'
-include ':Home'
-include ':Common'
+include ':module_user'
+include ':module_project'
+include ':module_home'
+include ':module_common'
 include ':app'
 rootProject.name = "Module_Project"

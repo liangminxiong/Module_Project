@@ -40,4 +40,9 @@ ext {
     targetSdkVersion = 30
     versionCode = 1
     versionName = "1.0"
+
+    appApplicationId = "com.lmx.module_project"
+    homeApplicationId = "com.lmx.module_home"
+    projectApplicationId = "com.lmx.module_project"
+    userApplicationId = "com.lmx.module_user"
 }
